@@ -1,0 +1,45 @@
+/* Destination Cities */
+
+iframe {
+  border: 2px solid white;
+  height: 400px;
+  margin-left: 50px;
+  width: 680px;
+}
+
+body {
+  background-image: url("../images/pin.jpeg");
+  background-size: cover;
+}
+
+.city-head {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.city-head a {
+  color: white;
+  text-decoration: none;
+}
+
+.city-head a:hover {
+  border-bottom: solid 1px white;
+}
+
+.city-head a:visited {
+  color: white;
+}
+
+table {
+  margin-left: 105px;
+  margin-top: 135px;
+}
+
+.city-description {
+  color: white;
+  font-size: 13px;
+  line-height: 25px;
+  margin: 25px;
+  text-align: justify;
+  width: 400px;
+}

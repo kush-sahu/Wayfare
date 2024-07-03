@@ -1,0 +1,1155 @@
+.kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.kanit-extralight {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kanit-thin-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.kanit-extralight-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-medium-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.kanit-semibold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kanit-bold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kanit-extrabold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.kanit-black-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Footer Stylings */
+
+footer {
+  background-color: rgb(121, 62, 62);
+  bottom: 0;
+  color: white;
+  font-size: 12px;
+  height: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  font-size: 12px;
+}
+
+.footer-links {
+  float: right;
+  padding-right: 20px;
+}
+
+/* Navbar Stylings */
+
+/* @font-face {
+  font-family: navBrandFont;
+  src: url(../Fonts/blackjack.otf);
+} */
+
+.nav-header {
+  background-color: rgb(121,62,62);
+  display: flex;
+  height: 50px;
+  padding-left: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-header > .nav-title {
+  font-family: navBrandFont;
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+.nav-header > .nav-title > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-btn {
+  display: none;
+}
+
+#nav-check {
+  display: none;
+}
+
+.nav-links > ul > li {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 15px;
+}
+
+.nav-links > ul > li > a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.navItems::after {
+  border-bottom: solid 1px white;
+  content: "";
+  display: block;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.navItems:hover::after {
+  transform: scaleX(1);
+}
+
+/* Stylings for home page */
+
+.cardHolder {
+  background-color: rgb(240, 235, 235);
+  border-radius: 15px;
+  bottom: 100px;
+  height: 500px;
+  margin-left: 100px;
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative;
+  right: 20px;
+  width: 1200px;
+}
+
+.column {
+  box-sizing: border-box;
+  float: left;
+  height: 250px;
+  margin: 15px;
+  padding: 10px;
+  width: 270px; 
+}
+
+.description {
+  color: rgb(0, 0, 0);
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  top: -180px;
+}
+
+.column:hover img {
+  backface-visibility: hidden;
+  opacity: 0.2;
+}
+
+.column:hover .text {
+  opacity: 1;
+}
+
+.column img {
+  border-radius: 10px;
+}
+
+.column .text {
+  opacity: 0;
+}
+
+.column h2 {
+  bottom: 200px;
+  color: rgb(0, 0, 0);
+  font-family: "Abel";
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+
+.header {
+  color: rgb(68, 32, 32);
+  font-family: Lato, sans-serif;
+  padding: 30px;
+  text-align: center;
+}
+
+.text a {
+  text-decoration: none;
+}
+
+.column-heading {
+  bottom: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  left: 30px;
+  position: relative;
+  width: 78%;
+}
+
+/* Carousel Stylings */
+
+.slideshow {
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  overflow: hidden;
+  width: 1200px;
+}
+
+.slide-wrapper {
+  animation: slide 18s linear infinite;
+  width: 6000px;
+}
+
+.slide {
+  border-radius: 15px;
+  float: left;
+  height: 375px;
+  width: 1200px;
+}
+
+.slide:nth-child(1) {
+  background: url(../images/c2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.slide:nth-child(2) {
+  background: url(../images/golden.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.slide:nth-child(3) {
+  background: url(../images/c6.webp) no-repeat center;
+  background-size: cover;
+}
+
+.slide:nth-child(4) {
+  background: url(../images/unitedarab.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.slide:nth-child(5) {
+  background: url(../images/c2.webp) no-repeat center top;
+  background-size: cover;
+}
+
+.slide-number {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  padding-top: 300px;
+  text-align: center;
+}
+
+@keyframes slide {
+  10% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: -1200px;
+  }
+
+  30% {
+    margin-left: -1200px;
+  }
+  
+  40% {
+    margin-left: -2400px;
+  }
+
+  50% {
+    margin-left: -2400px;
+  }
+
+  60% {
+    margin-left: -3600px;
+  }
+
+  70% {
+    margin-left: -3600px;
+  }
+
+  80% {
+    margin-left: -4800px;
+  }
+
+  100% {
+    margin-left: -4800px;
+  }
+}
+
+/* Go to top icon styling used in home and gallery page */
+
+.top {
+  background-color: rgb(121, 62, 62);
+  border-radius: 5px;
+  bottom: 50px;
+  color: white;
+  font-size: 50px;
+  height: 25px;
+  margin-left: 1270px;
+  padding: 5px;
+  position: fixed;
+  text-align: center;
+  width: 40px;
+}
+
+/* end of go to top styling */
+
+.cardHolder button {
+  background-color: #007bff;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  left: 525px;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  position: relative;
+  top: 80px;
+}
+
+.cardHolder button:hover {
+  background: #29516b;
+  border-color: #0b0e0c;
+  color: aliceblue;
+}
+
+/* Styling for popular destinations page */
+
+/* Card Stylings */
+
+.destination-cardTable {
+  border-spacing: 30px 30px;
+}
+
+.destination-cardHolder {
+  margin-left: 80px;
+  margin-top: 135px;
+}
+
+.d-card {
+  border-radius: 5px;
+  font-family: "Abel", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  height: 160px;
+  text-align: center;
+  width: 350px;
+}
+
+.d-card:hover {
+  opacity: 0.7;
+}
+
+.destination-cardTable td a {
+  color: white;
+  text-decoration: none;
+}
+
+.india {
+  background: url(../images/agrathumbnail.webp) no-repeat center;
+  background-size: cover;
+}
+
+.france {
+  background: url(../images/france.webp) no-repeat center;
+  background-size: cover;
+}
+
+.usa {
+  background: url(../images/America.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.uae {
+  background: url(../images/Dubai.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.singapore {
+  background: url(../images/Singapore.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.thailand {
+  background: url(../images/Thailand.webp) no-repeat center;
+  background-size: cover;
+}
+
+/* Styling for destination places */
+
+.place-col {
+  float: left;
+  width: 25%;
+}
+
+.place-row {
+  margin-right: 18px;
+  margin-top: 140px;
+}
+
+.place-head {
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.place-head a {
+  text-decoration: none;
+}
+
+.place-head a:hover {
+  border-bottom: solid 1px rgb(121, 62, 62);
+}
+
+.place-head a:visited {
+  color: rgb(121, 62, 62);
+}
+
+/* Style the counter cards */
+
+.place-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 340px;
+  margin-left: 20px;
+  padding: 16px;
+}
+
+.place-container {
+  color: rgb(82, 81, 81);
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px;
+  text-align: center;
+}
+
+.place-card:hover {
+  box-shadow: 0 8px 16px 0;
+}
+
+.place-image {
+  position: relative;
+  width: 50%;
+}
+
+.place-card img {
+  backface-visibility: hidden;
+  display: block;
+  height: 200px;
+  transition: 0.5s ease;
+  width: 280px;
+}
+
+.place-text {
+  color: white;
+  font-size: 50px;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+}
+
+.place-image:hover img {
+  opacity: 0.5;
+}
+
+.place-image:hover .place-text {
+  opacity: 1;
+}
+
+/* Tour packages styling */
+
+.package-main table {
+  margin-bottom: 30px;
+  margin-left: 85px;
+  margin-top: 20px;
+  width: 1200px;
+}
+
+.package-main {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 100px;
+}
+
+.package-footer {
+  margin-top: 70px;
+}
+
+.wc {
+  text-align: center;
+  width: 80px;
+}
+
+.package-main th,
+.package-main td {
+  border: none;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.package-main th {
+  background-color: rgb(121, 62, 62);
+  color: white;
+}
+
+.qtr {
+  font-size: 12px !important;
+}
+
+.package-main .alt1 {
+  background-color: rgb(243, 226, 226);
+  color: rgb(38, 34, 34);
+}
+
+.package-main .alt2 {
+  background-color: rgb(204, 163, 163);
+  color: rgb(38, 34, 34);
+}
+
+.package-main .tag {
+  color: rgb(121, 62, 62);
+  float: right;
+  font-size: 12px;
+  margin-right: 83px;
+}
+
+.package-main .head {
+  color: rgb(121, 62, 62);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* offers page */
+
+.wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 480px;
+  grid-gap:10px;
+  margin-left: 245px;
+  margin-top: 100px;
+  max-width:860px;
+}
+
+.offer-usa .superSaver-image,
+.offer-usa .superSaver-text {
+  backface-visibility: hidden;
+  grid-row: 1/3;
+  height: 480px;
+  position: absolute;
+  text-align: justify;
+  transition: 1s;
+  width: 380px;
+}
+
+.offer-usa .superSaver-image {
+  background: url("../images/uss.jpeg") center;
+  background-size: cover;
+  transform: perspective(1000px);
+}
+
+.offer-usa .superSaver-text {
+  font-size: 13px;
+  line-height: 25px;
+  padding-top: 45px;
+  transform: perspective(1000px) rotateY(180deg);
+}
+
+.offer-usa:hover .superSaver-image {
+  transform: perspective(1000px) rotateY(-180deg);
+}
+
+.offer-usa:hover .superSaver-text {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.offer-dubai {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column:2/3;
+  grid-gap:8px;
+}
+
+.shopping-festival {
+  grid-column: 1 / 3;
+  height: 210px;
+  position: relative;
+}
+
+.shopping-festival .dubaiOffers-image,
+.shopping-festival .dubaiOffers-text {
+  backface-visibility: hidden;
+  height: 210px;
+  position: absolute;
+  transition: 1s;
+  width: 460px;
+}
+
+.shopping-festival .dubaiOffers-image {
+  background: url("../images/dubai_Offer.webp") center;
+  background-size: cover;
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.shopping-festival .dubaiOffers-text {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: justify;
+  transform: perspective(1000px) rotateY(180deg);
+}
+
+.shopping-festival:hover .dubaiOffers-image {
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+
+.shopping-festival:hover .dubaiOffers-text {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+
+.india-offer {
+  grid-column:1/2;
+  grid-row:2/3;
+  height: 260px;
+  width: 230px;
+}
+
+.india-offer .indiaOffer-image,
+.india-offer .indiaOffer-text {
+  backface-visibility: hidden;
+  height: 260px;
+  position: absolute;
+  transition: 1s;
+  width: 230px;
+}
+
+.india-offer .indiaOffer-image {
+  background-image: url("../images/taj.jpeg");
+  background-position: center;
+  background-size: cover;  
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.india-offer .indiaOffer-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: justify;
+  transform: perspective(1000px) rotateY(180deg);
+}
+
+.india-offer:hover .indiaOffer-image {
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+
+.india-offer:hover .indiaOffer-text {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+
+.france-offer {
+  grid-column: 2;
+  grid-row: 2/3;
+  height: 260px;
+  width: 220px;
+}
+
+.france-offer .franceOffer-image,
+.france-offer .franceOffer-text {
+  backface-visibility: hidden;
+  height: 260px;
+  position: absolute;
+  transition: 1s;
+  width: 220px;
+}
+
+.france-offer .franceOffer-image {
+  background: url("../images/ParisOffer.jpeg") center top;
+  background-size: cover;
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.france-offer .franceOffer-text {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: justify;
+  transform: perspective(1000px) rotateY(180deg);
+  z-index: 1;
+}
+
+.france-offer:hover .franceOffer-image {
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+
+.france-offer:hover .franceOffer-text {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+
+.franceOffer-image img {
+  height: 280px;
+  width: 100%;
+}
+
+.discountTag {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+}
+
+.dubaiOffers-heading {
+  color: white;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+}
+
+.indiaOffer-heading {
+  color: white;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+}
+
+.franceOffer-heading {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+
+.redCol {
+  color: rgb(160, 14, 14);
+  font-weight: 600;
+}
+
+/* Enquire us Page */
+
+.enquire-main {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 150px;
+}
+
+.enquire-content {
+  color: rgba(121, 62, 62);
+  font-size: 15px;
+  line-height: 1.5;
+  padding-left: 120px;
+  padding-top: 10px;
+}
+
+.enquire-head {
+  color: rgb(121, 62, 62);
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 135px;
+}
+.form-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.form-col {
+  float: left;
+}
+
+#notifications{
+  margin-top:30px;
+}
+
+input[type="text"],
+input[type="email"],
+#citi {
+  width: 345px;
+}
+
+textarea {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid gray;
+  border-radius: 3px;
+  font-size: 13px;
+  margin: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-top: 10px;
+  width: 710px;
+}
+
+input[type="date"] {
+  width: 160px;
+}
+
+input:required {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid gray;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  height: 30px;
+  margin: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+input[list] {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid gray;
+  border-radius: 3px;
+  font-size: 13px;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+}
+
+input[type="tel"] {
+  height: 30px;
+  margin: 6px;
+  width: 230px;
+}
+
+input[type="number"] {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 160px;
+}
+
+.code {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid gray;
+  border-radius: 3px;
+  color: gray;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 13px;
+}
+
+.check {
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  border: 1px solid grey;
+  border-radius: 3px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  width: 20px;
+}
+
+input:checked {
+  height: 25px;
+  width: 25px;
+}
+
+.enquire-main button {
+  background-color: rgba(121, 62, 62);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  height: 35px;
+  margin-left: 510px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 200px;
+}
+
+/* Success page styling */
+
+.success-main {
+  margin-top: 250px;
+  text-align: center;
+}
+
+/* gallery page styling */
+
+.main-gallery {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 90px;
+}
+
+.gallery-row {
+  display: flex;
+  margin-left: 120px;
+  padding: 5px;
+}
+
+.gallery-column {
+  max-width: 30%;
+  padding: 10px 10px;
+}
+
+.gallery-column img {
+  margin-top: 20px;
+  width:100%;
+  vertical-align: middle;
+}
+
+.main-gallery hr {
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  width: 85%;
+}
+
+.main-gallery video {
+  height: 100%;
+  object-fit: fill;
+  width: 100%;
+}
+
+.item2 {
+  grid-area: menu;
+  height: 250px;
+}
+
+.item3 {
+  grid-area: main;
+  height: 400px;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.item5 {
+  grid-area: footer;
+  height: 250px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "menu menu menu main main main" "right right right main main main" "right right right footer footer footer";
+  margin-left: 129px;
+  margin-right: 129px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.gallery-head {
+  color: rgb(121, 62, 62);
+  font-weight: 600;
+  margin-left: 135px;
+}
+
+.gallery-video {
+  color: rgb(121, 62, 62);
+  font-weight: 600;
+  margin-left: 325px;
+  margin-top: -18px;
+}
+
+.main-gallery a {
+  text-decoration: none;
+}
+
+.main-gallery img {
+  height: 250px;
+}
+
+/* Contact us page styling */
+
+.contact-main {
+  margin-top: 100px;
+}
+
+.contact-section {
+  color: rgb(121, 62, 62);
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 100px;
+}
+
+.contact-head {
+  font-size: 16px;
+}
+
+.contact-main dl {
+  padding-left: 40px;
+}
+
+.contact-main dl dt {
+  font-weight: bold;
+}
+
+/* About us styling */
+
+.about-content {
+  color: rgb(121, 62, 62);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 80px;
+  text-align: justify;
+}
+
+.container {
+  width: 100%;
+}
+
+.awards-section {
+  float: left;
+  width: 70%;
+}
+
+.knowmore-section {
+  border: 1px solid #915656;
+  float: right;
+  padding: 5px;
+  width: 30%;
+}
+
+.knowmore-section header h4 {
+  background-color: #915656;
+  color: white;
+  padding: 5px;
+}
+
+.knowmore-section aside a {
+  color: black;
+}
+
+p > em {
+  float: right;
+}
+
+/* Terms and Condition styling */
+
+.terms-section {
+  color: rgb(121, 62, 62);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 80px;
+  text-align: justify;
+}
+
+.terms-section > p {
+  margin-top: 20px;
+}

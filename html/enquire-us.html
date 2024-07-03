@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Security-Policy" content="style-src 'self'" />
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <script type="text/javascript" src="../js/purify.min.js"></script>
+  <title>WayFar - Enquire Us</title>
+</head>
+
+<body>
+  <header class="nav-header">
+    <div class="nav-title">
+      <a href="./home.html">WayFar</a>
+    </div>
+    <input type="checkbox" id="nav-check" />
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <nav class="nav-links" aria-label="Navigation links in WayFar header">
+      <ul>
+        <li class="navItems"><a href="./home.html">HOME</a></li>
+        <li class="navItems">
+          <a href="./popular-destinations.html">POPULAR DESTINATIONS</a>
+        </li>
+        <li class="navItems">
+          <a href="./tour-packages.html">TOUR PACKAGES</a>
+        </li>
+        <li class="navItems"><a href="./offers.html">OFFERS</a></li>
+        <li class="navItems"><a href="./enquire-us.html">ENQUIRE US</a></li>
+        <li class="navItems"><a href="./gallery.html">GALLERY</a></li>
+        <li class="navItems"><a href="./faq.html">FAQ</a></li>
+        <li class="navItems"><a href="./Login.html">LOGOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="enquire-main">
+      <header>
+        <h3 class="enquire-head">Send us a query</h3>
+      </header>
+      <br />
+      <form class="enquire-content" action="./success.html" autocomplete="off">
+        <div class="form-row">
+          <div class="form-col">
+            <label for="name">Name</label> <br />
+                <input id="name" type="text" required placeholder="Ex : John Davis" pattern="^[A-Za-z\s]+$" />
+          </div>
+          <div class="form-col">
+            <label for="email">Email Id</label> <br />
+                <input id="email" type="email" placeholder="Ex : john.davis@example.com" required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+          </div>
+          <div class="form-col">
+            <label for="citi">Destination</label> <br />
+                <input id="citi" list="city" placeholder="Ex : India" />
+                <datalist id="city">
+                  <option value="India"></option>
+                  <option value="France"></option>
+                  <option value="Singapore"></option>
+                  <option value="Thailand"></option>
+                  <option value="United Arab Emirates"></option>
+                  <option value="United States of America"></option>
+                </datalist>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-col">
+            <label>No. of Travellers</label> <br />
+            <input type="number" required id="adult" placeholder="Adult" min="0" />
+            <input type="number" required id="children" placeholder="Children" min="0" />
+          </div>
+          <div class="form-col">
+            <label for="code">Phone Number</label> <br />
+            <select id="code" class="code">
+              <option value="" selected disabled>Code</option>
+              <option value="+213">+213</option>
+              <option value="+91">+91</option>
+              <option value="+244">+244</option>
+              <option value="+61">+61</option>
+              <option value="+973">+973</option>
+            </select>
+            <input id="phone" type="tel" pattern="^[0-9]{10}$" required placeholder="Ex : 9897979086" />
+          </div>
+          <div class="form-col">
+            <label for="">Start &amp; End dates of Trip</label> <br />
+            <input type="date" id="from" required />
+            <input type="date" id="to" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-col">
+            <label for="queries">Add your Queries</label> <br />
+                <textarea id="queries" rows="4" cols="22" required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></textarea>
+                  
+          </div>
+          <div class="form-col" id="notifications">
+            <label class="check">Send notifications</label> <br />
+            <input type="checkbox" />via Email
+            <input type="checkbox" />via SMS
+          </div>
+        </div>
+        <button type="submit">Raise your query</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <span> Copyright @ WayFar, 2022 </span>
+    <div class="footer-links">
+      <a href="./contact-us.html">Contact Us</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="./terms-condition.html">Terms &amp; Conditions</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="./about-us.html">About Us</a>
+    </div>
+  </footer>
+</body>
+
+</html>
